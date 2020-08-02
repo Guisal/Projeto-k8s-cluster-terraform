@@ -1,0 +1,14 @@
+---
+# handlers file for install-k8s
+# tem que ser o mesmo nome que está no tasks/install.yml 
+#- name: Restart Docker
+#  service:
+#    become: yes
+#    name: Docker
+#    statte: restarted
+#       Restart Kubelet
+- name: Restart Kubelet
+  service:
+    become: yes
+    name: Kubelet
+    statte: restarted
