@@ -170,11 +170,3 @@ K8S_API_SECURE_PORT=6443
 EOF
   filename = "../install_k8s/hosts"
 }
-
-#data "template_file" "set-k8s-config"{
-#  template = fileexists("k8s-config") ? file("k8s-config") : local.default_content
-#  vars = {
-#    aws_instance.example.*.private_ip
-#  }
-#}
-#fazer o mesmo passar para os outros do ansible 
