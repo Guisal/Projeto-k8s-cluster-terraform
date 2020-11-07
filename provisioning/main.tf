@@ -6,7 +6,7 @@ provider "aws" {
 }
 
 data "http" "external-ip" {
-  url = "http://icanhazip.com"
+  url = "http://ipv4.icanhazip.com"
 }
 
 resource "aws_default_vpc" "main" {
